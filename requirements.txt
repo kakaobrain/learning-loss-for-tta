@@ -1,0 +1,9 @@
+git+https://github.com/wbaek/theconf@de32022f8c0651a043dc812d17194cdfd62066e8
+pretrainedmodels
+pyzmq==18.1.0
+argparse==1.4.0
+tqdm
+sklearn
+scikit-image
+colored
+wand

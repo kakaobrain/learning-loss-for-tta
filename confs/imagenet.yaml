@@ -1,0 +1,24 @@
+dataset: imagenet
+num_classes: 1000
+
+# target network
+target_network: resnet50
+target_size: 224
+target_aug: default
+
+# l2t network which learn how to test(tta)
+network: efficientnet-l2t
+size: 64
+dropout: 0.3
+dropconn: 0.2
+
+optimizer: rmsproptf
+tau: 1.0
+
+num_duplication: 3
+batch: 128
+epoch: 60
+early_stop: -1
+lr: 0.01
+momentum: 0.999
+decay: 0.00001
